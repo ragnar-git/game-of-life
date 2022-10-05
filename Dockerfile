@@ -1,3 +1,3 @@
 FROM tomcat:9
 MAINTAINER ashish123
-COPY gameoflife.war test-1:/usr/local/tomcat/webapps/
+RUN docker cp gameoflife.war test-1:/usr/local/tomcat/webapps/
